@@ -50,20 +50,42 @@ body, html {
 /* Color Picker Styles */
 .color-picker {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
     z-index: 10;
-    padding: 10px;
+    padding: 10px 15px;
     background: var(--overlay-bg);
     border-radius: 20px;
     backdrop-filter: blur(5px);
 }
 
-.bg-white .color-picker { background: rgba(0, 0, 0, 0.05); }
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-input {
+    width: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.team-input:focus {
+    border-bottom-color: white;
+}
 
 .color-btn {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
@@ -71,19 +93,15 @@ body, html {
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.bg-white .color-btn { border-color: rgba(0, 0, 0, 0.2); }
-
 .color-btn:active {
     transform: scale(0.8);
 }
 
 /* Defined swatches for the buttons */
 .btn-blue { background-color: #1a365d; }
-.btn-red { background-color: #5d1a1a; }
-.btn-green { background-color: #1a5d2b; }
+.btn-cyan { background-color: #0c4e5a; }
 .btn-black { background-color: #222222; }
 .btn-pink { background-color: #5d1a4e; }
-.btn-white { background-color: #ffffff; border-color: #ccc; }
 
 .court {
     flex: 1;
@@ -99,19 +117,10 @@ body, html {
 }
 
 /* Background Color Classes */
-.bg-blue { background: linear-gradient(135deg, #111 0%, var(--court-1-color) 100%); }
-.bg-red { background: linear-gradient(135deg, #111 0%, var(--court-2-color) 100%); }
-.bg-green { background: linear-gradient(135deg, #111 0%, #1a5d2b 100%); }
+.bg-blue { background: linear-gradient(135deg, #111 0%, #1a365d 100%); }
+.bg-cyan { background: linear-gradient(135deg, #111 0%, #0c4e5a 100%); }
 .bg-black { background: linear-gradient(135deg, #0a0a0a 0%, #222222 100%); }
 .bg-pink { background: linear-gradient(135deg, #111 0%, #5d1a4e 100%); }
-.bg-white { background: linear-gradient(135deg, #d4d4d4 0%, #ffffff 100%); color: #111111; }
-
-.bg-white .team-name { color: #111111; border-color: rgba(0,0,0,0.2); }
-.bg-white .score { text-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-.bg-white .swipe-hint { color: #111111; }
-.bg-white .sets-container { color: #111111; background: rgba(0, 0, 0, 0.05); }
-.bg-white .icon-btn { color: #111111; background: rgba(0, 0, 0, 0.1); }
-.bg-white .icon-btn:active { background: rgba(0, 0, 0, 0.2); }
 
 .team-name {
     font-size: 2.5rem;

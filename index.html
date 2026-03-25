@@ -32,12 +32,22 @@
                 </div>
             </div>
             <div class="color-picker">
-                <button class="color-btn btn-blue" onclick="setCourtColor('left', 'bg-blue')" aria-label="藍色"></button>
-                <button class="color-btn btn-red" onclick="setCourtColor('left', 'bg-red')" aria-label="紅色"></button>
-                <button class="color-btn btn-green" onclick="setCourtColor('left', 'bg-green')" aria-label="綠色"></button>
-                <button class="color-btn btn-black" onclick="setCourtColor('left', 'bg-black')" aria-label="黑色"></button>
-                <button class="color-btn btn-pink" onclick="setCourtColor('left', 'bg-pink')" aria-label="粉色"></button>
-                <button class="color-btn btn-white" onclick="setCourtColor('left', 'bg-white')" aria-label="白色"></button>
+                <div class="color-item">
+                    <button class="color-btn btn-blue" onclick="setCourtColor('left', 'bg-blue')" aria-label="藍色"></button>
+                    <input type="text" class="team-input input-bg-blue" value="藍隊" oninput="updateGlobalTeamName('bg-blue', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-cyan" onclick="setCourtColor('left', 'bg-cyan')" aria-label="青色"></button>
+                    <input type="text" class="team-input input-bg-cyan" value="青隊" oninput="updateGlobalTeamName('bg-cyan', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-black" onclick="setCourtColor('left', 'bg-black')" aria-label="黑色"></button>
+                    <input type="text" class="team-input input-bg-black" value="黑隊" oninput="updateGlobalTeamName('bg-black', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-pink" onclick="setCourtColor('left', 'bg-pink')" aria-label="粉色"></button>
+                    <input type="text" class="team-input input-bg-pink" value="粉隊" oninput="updateGlobalTeamName('bg-pink', this.value)" spellcheck="false">
+                </div>
             </div>
         </div>
 
@@ -56,12 +66,22 @@
                 </div>
             </div>
             <div class="color-picker">
-                <button class="color-btn btn-blue" onclick="setCourtColor('right', 'bg-blue')" aria-label="藍色"></button>
-                <button class="color-btn btn-red" onclick="setCourtColor('right', 'bg-red')" aria-label="紅色"></button>
-                <button class="color-btn btn-green" onclick="setCourtColor('right', 'bg-green')" aria-label="綠色"></button>
-                <button class="color-btn btn-black" onclick="setCourtColor('right', 'bg-black')" aria-label="黑色"></button>
-                <button class="color-btn btn-pink" onclick="setCourtColor('right', 'bg-pink')" aria-label="粉色"></button>
-                <button class="color-btn btn-white" onclick="setCourtColor('right', 'bg-white')" aria-label="白色"></button>
+                <div class="color-item">
+                    <button class="color-btn btn-blue" onclick="setCourtColor('right', 'bg-blue')" aria-label="藍色"></button>
+                    <input type="text" class="team-input input-bg-blue" value="藍隊" oninput="updateGlobalTeamName('bg-blue', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-cyan" onclick="setCourtColor('right', 'bg-cyan')" aria-label="青色"></button>
+                    <input type="text" class="team-input input-bg-cyan" value="青隊" oninput="updateGlobalTeamName('bg-cyan', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-black" onclick="setCourtColor('right', 'bg-black')" aria-label="黑色"></button>
+                    <input type="text" class="team-input input-bg-black" value="黑隊" oninput="updateGlobalTeamName('bg-black', this.value)" spellcheck="false">
+                </div>
+                <div class="color-item">
+                    <button class="color-btn btn-pink" onclick="setCourtColor('right', 'bg-pink')" aria-label="粉色"></button>
+                    <input type="text" class="team-input input-bg-pink" value="粉隊" oninput="updateGlobalTeamName('bg-pink', this.value)" spellcheck="false">
+                </div>
             </div>
         </div>
 
