@@ -1,0 +1,17 @@
+{
+    "name": "羽球計分板",
+    "short_name": "羽球計分",
+    "description": "羽毛球比賽專用計分板 PWA",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#121212",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src": "icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
