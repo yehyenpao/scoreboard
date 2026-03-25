@@ -99,9 +99,9 @@ body, html {
 
 /* Defined swatches for the buttons */
 .btn-blue { background-color: #1a365d; }
-.btn-cyan { background-color: #0c4e5a; }
+.btn-cyan { background-color: #10b981; } /* Light Green / Emerald */
 .btn-black { background-color: #222222; }
-.btn-pink { background-color: #5d1a4e; }
+.btn-pink { background-color: #ec4899; } /* Light Pink */
 
 .court {
     flex: 1;
@@ -118,9 +118,9 @@ body, html {
 
 /* Background Color Classes */
 .bg-blue { background: linear-gradient(135deg, #111 0%, #1a365d 100%); }
-.bg-cyan { background: linear-gradient(135deg, #111 0%, #0c4e5a 100%); }
+.bg-cyan { background: linear-gradient(135deg, #111 0%, #10b981 100%); }
 .bg-black { background: linear-gradient(135deg, #0a0a0a 0%, #222222 100%); }
-.bg-pink { background: linear-gradient(135deg, #111 0%, #5d1a4e 100%); }
+.bg-pink { background: linear-gradient(135deg, #111 0%, #ec4899 100%); }
 
 .team-name {
     font-size: 2.5rem;
